@@ -1,0 +1,106 @@
+
+
+h2 {
+	font-size: 160%;
+	padding: 0.3em 0;
+}
+
+table {
+	width: 100%;
+}
+
+table tr th {
+	background: #3647a3;
+	color: #FFF;
+	font-weight: bold;
+	padding: 0.3em 5px;
+}
+
+table tr td {
+	border-bottom: 1px solid #CCC;
+	padding: 0.3em 5px;
+}
+
+/**
+ * Header
+ */
+div#header h1 {
+	background: #3647a3;
+	border-bottom: 1px solid #111;
+	color: #FFF;
+	font-size: 200%;
+	padding: 0.3em 20px;
+	text-shadow: 1px 1px 0.05em #CCC;
+}
+
+div#header ul#menu {
+	background: #333;
+	border-bottom: 1px solid #555;
+	padding: 0.3em 20px;
+}
+
+div#header ul#menu li {
+	display: inline;
+	margin-right: 10px;
+}
+
+div#header ul#menu li a {
+	color: #FFF;
+}
+
+div#header ul#menu li a:hover {
+	color: #DDD;
+	text-decoration: none;
+}
+
+
+
+/**
+ * Conteúdo
+ */
+
+div#content {
+	margin: 0 auto;
+	padding: 1em 0;
+	width: 700px;
+}
+
+
+
+
+
+
+
+/** Preview **/
+div#preview-avaliado, div#preview-lider {
+	overflow: auto;
+	width: 48%;
+}
+
+div#preview-avaliado {
+	float: left;
+}
+
+div#preview-lider {
+	float: right;
+}
+
+
+
+/**
+ * Footer
+ */
+div#footer {
+	text-align: center;
+}
+
+
+
+
+/**
+ * Outros
+ */
+.clear {
+	clear: both;
+	display: block;
+}
