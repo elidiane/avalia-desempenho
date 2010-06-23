@@ -34,6 +34,7 @@
 	<div id="footer">
 		<p>Avaliação de Desempenho</p>
 	</div>
+	<?php echo $this->element('sql_dump'); ?>
 	<!-- Fim Rodapé -->
 
 </body>
