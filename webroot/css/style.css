@@ -5,50 +5,80 @@ h2 {
 	padding: 0.3em 0;
 }
 
+h3 {
+	font-weight: bold;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+/**
+ * Tabelas
+ */
 table {
 	width: 100%;
 }
 
-table tr th {
+table thead th {
 	background: #3647a3;
 	color: #FFF;
 	font-weight: bold;
 	padding: 0.3em 5px;
 }
 
-table tr td {
+table tbody tr td {
 	border-bottom: 1px solid #CCC;
 	padding: 0.3em 5px;
 }
 
+table tbody tr td a {
+	color: #000;
+	text-decoration: underline;
+}
+
+table tbody tr td a:hover {
+	text-decoration: none;
+}
+
+
 /**
  * Header
  */
-div#header h1 {
+div#header {
 	background: #3647a3;
 	border-bottom: 1px solid #111;
+}
+div#header h1 {
 	color: #FFF;
 	font-size: 200%;
-	padding: 0.3em 20px;
+	margin: 0 auto;
+	padding: 0.3em 0;
 	text-shadow: 1px 1px 0.05em #CCC;
+	width: 700px;
 }
 
-div#header ul#menu {
+div#menu {
 	background: #333;
 	border-bottom: 1px solid #555;
-	padding: 0.3em 20px;
 }
 
-div#header ul#menu li {
+div#menu ul {
+	margin: 0 auto;
+	padding: 0.3em 0;
+	width: 700px;
+}
+
+div#menu ul li {
 	display: inline;
 	margin-right: 10px;
 }
 
-div#header ul#menu li a {
+div#menu ul li a {
 	color: #FFF;
 }
 
-div#header ul#menu li a:hover {
+div#menu ul li a:hover {
 	color: #DDD;
 	text-decoration: none;
 }

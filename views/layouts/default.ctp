@@ -19,9 +19,10 @@
 	<!-- Cabecalho -->
 	<div id="header">
 		<h1>Avaliação de desempenho</h1>
-		
-		<?php echo $this->element('menu');?>
 	</div>
+	
+	<?php echo $this->element('menu');?>
+	
 	<!-- Fim Cabecalho -->
 	
 	<!-- **************************** Conteúdo ***************************** -->
