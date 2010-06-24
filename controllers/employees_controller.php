@@ -2,7 +2,6 @@
 
 class EmployeesController extends AppController
 {
-	
 	/**
 	 * Lista os colabodares
 	 *
@@ -18,7 +17,7 @@ class EmployeesController extends AppController
 	
 	
 	/**
-	 * Lista os colabodares
+	 * Visualiza as informações de um colaborador
 	 *
 	 * @return void
 	 * @access public
@@ -32,7 +31,6 @@ class EmployeesController extends AppController
 		);
 		
 		$employee = $this->Employee->find('first', $options);
-		
 		$this->set('employee', $employee);
 	
 	 } // view($employee_id = null)

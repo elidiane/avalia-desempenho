@@ -23,16 +23,15 @@ class RolesController extends AppController
 	 * @return void
 	 * @access public
 	 */
-	public function view($id = null)
+	public function view($role_id = null)
 	{
 		$options = array(
 			'conditions' => array(
-			'id' => $id
+			'Role.id' => $role_id
 			)
 		);
 		
 		$role = $this->Role->find('first', $options);
-		
 		$this->set('role', $role);
 	
 	} // view($id = null)
@@ -53,8 +52,5 @@ class RolesController extends AppController
 		}
 	
 	} // add()
-	
-	
 }
-
 
