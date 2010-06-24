@@ -3,21 +3,6 @@
 class RolesController extends AppController
 {
 	/**
-	 * Antes de executar uma ação
-	 * 
-	 * @return void
-	 * @access public
-	 */
-	public function beforeFilter() {
-		// permite deletar um cargo apenas usando o metodo POST
-		$this->Security->requirePost('delete');
-		
-		// protege o formulário de adição
-		$this->Security->requireAuth('add');
-	}
-	
-	
-	/**
 	 * Lista os cargos cadastrados
 	 * 
 	 * @return void
@@ -27,7 +12,8 @@ class RolesController extends AppController
 	{
 		$roles = $this->paginate('Role');
 		$this->set('roles', $roles);
-	}
+	
+	} // index()
 	
 	
 	/**
@@ -48,7 +34,8 @@ class RolesController extends AppController
 		$role = $this->Role->find('first', $options);
 		
 		$this->set('role', $role);
-	}
+	
+	} // view($id = null)
 	
 	
 	/**
@@ -64,6 +51,10 @@ class RolesController extends AppController
 				$this->redirect('/roles');
 			}
 		}
-	}
+	
+	} // add()
+	
+	
 }
+
 
