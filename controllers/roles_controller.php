@@ -38,6 +38,29 @@ class RolesController extends AppController
 	
 	
 	/**
+	 * Mostra apenas a view de cargos sem o layout
+	 * 
+	 * @param int $id O id da role que será mostrada
+	 * @return void
+	 * @access public
+	 */
+	public function simple_view($role_id = null)
+	{
+		$this->layout = 'simple';
+		
+		$options = array(
+			'conditions' => array(
+			'Role.id' => $role_id
+			)
+		);
+		
+		$role = $this->Role->find('first', $options);
+		$this->set('role', $role);
+	
+	} // view($id = null)
+	
+	
+	/**
 	 * Adiciona um novo cargo
 	 * 
 	 * @return void

@@ -14,32 +14,9 @@
 	)); ?>
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<?php echo $this->Html->script(array('popup-window', 'scripts')); ?>
 </head>
 
-<body>
-	
-	<!-- Cabecalho -->
-	<div id="header">
-		<h1>Avaliação de desempenho</h1>
-	</div>
-	
-	<?php echo $this->element('menu');?>
-	
-	<!-- Fim Cabecalho -->
-	
-	<!-- **************************** Conteúdo ***************************** -->
-	<div id="content">
-		<?php echo $content_for_layout; ?>
-	</div>
-	<!-- *************************** Fim Conteúdo ************************** -->
-	
-	<!-- Rodapé -->
-	<div id="footer">
-		<p>Avaliação de Desempenho</p>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
-	<!-- Fim Rodapé -->
-
+<body id="simple">
+	<?php echo $content_for_layout ?>
 </body>
 </html>

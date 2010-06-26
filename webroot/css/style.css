@@ -18,6 +18,12 @@ p {
 }
 
 
+/**
+ * Para o layout simples
+ */
+body#simple {
+	padding: 1em;
+}
 
 /**
  * Tabelas
@@ -127,9 +133,8 @@ fieldset.group_3 fieldset.question {
 
 fieldset.question {
 	border-bottom: 1px solid #CCC;
-	padding-bottom: 1em;
-	padding-left: 1em;
-	margin-top: 1em;
+	padding: 1em;
+
 }
 
 fieldset.question p {

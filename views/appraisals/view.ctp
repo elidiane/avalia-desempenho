@@ -7,6 +7,9 @@
 		'controller' => 'roles',
 		'action' => 'simple_view',
 		$appraisal['Role']['id']
+	),
+	array(
+		'class' => 'popup'
 	)
 ); ?></p>
 
